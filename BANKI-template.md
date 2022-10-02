@@ -134,32 +134,47 @@ Most of the technical questions should have a three sentence response in the EUE
 
 - **Explanation**
 - **Use**
-- **Example**
+- **Example**     
 
 ### HTML
 
 - [ ] What does a doctype do?
-  - **Explanation:**
+  - **Explanation:** The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. This ensures that the web page is parsed the same  way by different web browsers
   - **Use:**
-  - **Example:**
+  - **Example:** In HTML 5, the declaration is simple: <!DOCTYPE html>
   - **Source:**
 - [ ] How do you serve a page with content in multiple languages?
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
+  - **Explanation:** To change the language, just simply set the lang attribute. We can define it anywhere in the document, such as in the body, in the paragraph, in the heading, or in the span tag. But the best practice is to set the lang in the span tag.
+
+  - **Use:**<html lang="en">
+  - **Example:**<p>The title is "<span lang="fr">Le Bon Usage</span>".
   - **Source:**
 - [ ] What kinds of things must you be wary of when designing or developing for multilingual sites?
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
+  - **Explanation:**One of the zillion things to keep in mind: different letter count. Say you have a "GO!" button. In... say... Russian it turns into "ВПЕРЁД!" or "НАЧАЛИ!" and may easily ruin your design.
+  - Word length and phrase length.
+  - Design with labels above inputs rather than to the side to make room.
+  - Icons and especially icons with hand gestures can have different or even vulgar/offensive meanings in other cultures.
+  - Language reading direction
+  - Date and currency formats
+  -  Customer service: If you're not able to provice customer service (communications) in all the implemented languages, think twice about implementing all of them. At least warn your users before they sign-up so they don't expect you to talk to them in their language.
   - **Source:**
 - [ ] What are `data-` attributes good for?
-  - **Explanation:**
+  - **Explanation:** attribute is used to store custom data private to the page or application.
+  - attribute gives us the ability to embed custom data attributes on all HTML elements.
+  - The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience (without any Ajax calls or server-side database queries).
+  - These days, using data- attributes is generally not encouraged. One reason is that users can modify the data attribute easily by using inspect element in the browser. The data model is better stored within JavaScript itself and stay updated with the DOM via data binding possibly through a library or a framework.
   - **Use:**
   - **Example:**
   - **Source:**
 - [ ] Consider HTML5 as an open web platform. What are the building blocks of HTML5?
-  - **Explanation:**
+  - Semantics: allowing you to describe more precisely what your content is.
+  - Connectivity: allowing you to communicate with the server in new and innovative ways.
+  - Offline and storage: allowing webpages to store data on the client-side locally and operate offline more efficiently.
+  - Multimedia: making video and audio first-class citizens in the Open Web
+  - 2D/3D graphics and effects: allowing a much more diverse range of presentation options.
+  - Performance and integration: providing greater speed optimization and better usage of computer hardware.
+  - Device access: allowing for the usage of various input and output devices.
+  - Styling: letting authors write more sophisticated themes
   - **Use:**
   - **Example:**
   - **Source:**
