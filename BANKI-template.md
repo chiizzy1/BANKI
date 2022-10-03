@@ -179,24 +179,30 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Example:**
   - **Source:**
 - [ ] Describe the difference between a cookie, sessionStorage and localStorage.
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:** Cookies can be initiated by the server, have a manually set expiration date are small file size and are sent to the server with HTTP request. Local and session are both initiated by the client, are a relatively large file and aren't sent to the server. The main difference between local and session is that local storage will persist forever until cleared manually.
+  - **Use:** They are all used for client side storage of strings in key-value pairs.
   - **Example:**
   - **Source:**
 - [ ] Describe the difference between `<script>, <script async> and <script defer>`.
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
-  - **Source:**
+  - <script> HTML parsing is blocked, script is fetched and executed immediately.
+  - <script async> - script fetched in parallel to HTML parsing and executed as soon as it is available.
+  - <script defer> - script fetched in parallel to HTML parsing and executed when the page has finished parsing.
+   - **Use:** 
+   - Use async when the script is independent of any other scripts on the page
+   - defer is useful when you need to make sure the HTML is fully parsed before executing
+  - **Source:**https://www.frontendinterviewhandbook.com/html-questions
 - [ ] Why is it generally a good idea to position CSS `<link>`s within `<head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:**Putting <link>s in the <head> allows for quick "first meaningful paint". When a page first loads, HTML and CSS are being parsed simultaneously. Conversely <script> tags block HTML parsing while they are being downloaded and executed which can slow down your page. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first.
+  - **Exceptions:**When your script contains document.write, however it isn't consider good practice to use document.write. Also if you need scripts to run on page load it may be beneficial to split them out from your main script and place in the head.
   - **Example:**
   - **Source:**
 - [ ] What is progressive rendering?
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
+  - **Explanation:**They are techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
+  - **Use:**improve perceived load time
+  - **Examples of such techniques:**
+  - Lazy loading of images
+  - Prioritizing visible content (or above-the-fold rendering)
+  - Async HTML fragments
   - **Source:**
 - [ ] Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
   - **Explanation:**
