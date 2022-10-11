@@ -205,13 +205,13 @@ Most of the technical questions should have a three sentence response in the EUE
   - Async HTML fragments
   - **Source:**
 - [ ] Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
-  - **Source:**
+  - **Explanation:**When you want to serve different images to users depending on their device display width.
+  - **Use:**Sending lower resolution to limit data waste and increase performance or sending larger images to a higher resolution display to enhance the UX.
+  - **Example:**<img srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 2000w" src="..." alt="">
+  - **Source:**https://www.frontendinterviewhandbook.com/html-questions
 - [ ] Have you used different HTML templating languages before?
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:**EJS
+  - **Use:**EJS (Embedded JavaScript Templating) is one of the most popular template engines for JavaScript. As the name suggests, it lets us embed JavaScript code in a template language that is then used to generate HTML.
   - **Example:**
   - **Source:**
 
