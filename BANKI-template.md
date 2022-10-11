@@ -218,23 +218,23 @@ Most of the technical questions should have a three sentence response in the EUE
 ### CSS
 
 - [ ] What is CSS selector specificity and how does it work?
-  - **Explanation:**
-  - **Use:**
-  - **Example:**
+  - **Explanation:**According to MDN, Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied
+  - **Use:** if two CSS selectors apply to the same element, the one with higher specificity is used.
+  - **Example:** Id elements (e.g #card, #book) > Class elements (e.g .card, .col) > tags (e.g a, p, h1...)
   - **Source:**
 - [ ] What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:**CSS resets aim to remove all built-in browser styling. Standard elements like H1-6, p, strong, em, et cetera end up looking exactly alike, having no decoration at all. You're then supposed to add all decoration yourself. Normalize CSS aims to make built-in browser styling consistent across browsers.
+  - **Use:**Applying one or the other is done to try and make websites visually consistent across different browsers. I prefer to use a mix of both. Starting with the normalize to keep it conscise and then add some elements like anchors and headers with a reset
   - **Example:**
   - **Source:**
 - [ ] Describe floats and how they work.
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:**Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements (e.g. text will flow around floated elements), unlike position: absolute elements, which are removed from the flow of the page.
+  - **Use:**It was used prior to flex and grid to layout pages in a more flexible manner.
   - **Example:**
-  - **Source:**
+  - **Source:** https://www.frontendinterviewhandbook.com/css-questions/
 - [ ] Describe z-index and how stacking context is formed.
-  - **Explanation:**
-  - **Use:**
+  - **Explanation:**Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed ).
+  - **Use:**A stacking context is an element that contains a set of layers. The z-index values of its children are set relative to that element rather than to the document root. Layers outside of that context can't sit between layers within it.
   - **Example:**
   - **Source:**
 - [ ] Describe BFC (Block Formatting Context) and how it works.
